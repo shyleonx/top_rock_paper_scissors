@@ -1,22 +1,18 @@
 let playerScore = 0;
 let computerScore = 0;
 
-function getComputerChoice() {
-    let hands = Math.floor(Math.random() * 3);
+/* I advanced learn in array so I used it here because it is easier */
 
-    if (hands === 0) {
-        return "rock";
-    } else if (hands === 1) {
-        return "paper";
-    } else {
-        return "scissor";
-    }
+function getComputerChoice() {
+   let comChoices = ["rock", "paper", "scissor"];
+   let randomNum = Math.floor(Math.random() * 3); // This will generate a random number between 0-2 that will be used as index for array.
+   return comChoices[randomNum];
 }
 
 /* I ADD ANOTHER FUNCTION FOR USER CHOICE SO IT'S MORE CLEAN */
 
 function getUserChoice() {
-    const userChoice = prompt("Choose: Rock, Paper, Scissor: ").toLowerCase();
+    const userChoice = prompt("Choose: Rock, Paper, Scissor: ").toLowerCase(); // add .toLowerCase to make it case-insensitive
 
     if (userChoice === "rock" || userChoice === "paper" || userChoice ==="scissor") {
         return userChoice;
@@ -27,6 +23,8 @@ function getUserChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
+
+    let result;
 
     if (playerSelection === computerSelection) {
         console.log("it's a tie");
