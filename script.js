@@ -22,6 +22,7 @@ function getUserChoice() {
         return userChoice;
     } else {
         alert("You can only choose between rock, paper. or scissor")
+        return getUserChoice();
     }
 }
 
@@ -50,9 +51,7 @@ function playGame() {
     while (playerScore < 5 && computerScore < 5) {
         const playerSelection = getUserChoice();
         const computerSelection = getComputerChoice();
-
-        const result = playRound(playerSelection, computerSelection);
-        console.log(result);
+        playRound(playerSelection, computerSelection);
     }
 
     if (playerScore >= 5) {
