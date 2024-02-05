@@ -27,20 +27,16 @@ function playRound(playerSelection, computerSelection) {
     let result;
 
     if (playerSelection === computerSelection) {
-        console.log("it's a tie");
-    } else if (playerSelection === "rock" && computerSelection === "scissor") {
-        console.log("You win! Rock crushes scissor");
-        playerScore++;
-    } else if (playerSelection === "paper" && computerSelection === "rock") {
-        console.log("You win! Paper covers rock");
-        playerScore++;
-    } else if (playerSelection === "scissor" && computerSelection === "paper") {
-        console.log("You win! Scissor cuts paper");
+        result = `It's a draw you both choose ${playerSelection}`;
+    } else if (playerSelection === "rock" && computerSelection === "scissor" || playerSelection === "scissor" && computerSelection === "paper" || playerSelection === "paper" || computerSelection === "rock") {
+        result = `You win! ${playerSelection} beats ${computerSelection}.`;
         playerScore++;
     } else {
-        console.log("You lose :(");
+        result = `You lose! ${computerSelection} beats ${playerSelection}.`;
         computerScore++;
     }
+
+    console.log(result);
     console.log("Your score: " + playerScore);
     console.log("Computer score: " + computerScore);
 }
