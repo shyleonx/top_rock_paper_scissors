@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+#container {
+    color: white;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+}
+
+#scores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 100px;
+    font-size: 30px;
+    margin-block: 15px;
+}
+
+#scores .score {
+    color: yellow;
+}
+
+#display {
+    width: 1000px;
+    padding: 50px;
+    padding-top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#display .vs {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    color: red;
+}
+
+#display img {
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+    margin-top: 10px;
+}
+
+#long-line {
+    height: 1px;
+    margin-bottom: 22px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#result {
+    text-align: center;
+    font-size: 22px;
+    padding: 16px;  
+}
+
+#user-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+#user-selection button {
+    display: none;
+    padding: 16px 32px;
+    margin-inline: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.fire{
+    color: rgb(255, 151, 6);
+    border: 3px solid rgb(255, 151, 6);
+}
+
+.water {
+    color: rgb(63, 209, 253);
+    border: 3px solid rgb(63, 209, 253);
+}
+
+.grass {
+    color: greenyellow;
+    border:  3px solid greenyellow;
+}
+
+h1 .fire, h1 .water, h1 .grass {
+    border: none;
+}
+
+.draw {
+    color: yellow;
+}
+
+.win {
+    color: rgb(40, 229, 40);
+}
+
+.lose {
+    color: red;
+}
+
+#start-game {
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border: 3px solid white;
+    width: 200px;
+    margin: 0 auto;
+}

@@ -1,3 +1,3 @@
 # top_rock_paper_scissors
 
-# This is a simple Rock Paper Scissor game using JavaScript you can play it using the prompt and console.
+# Fire - Water - Grass is a version of TOP'S Rock Paper Scissor. I thought it would be fun to change the choices to pokemon starter types. Let me know what you think!

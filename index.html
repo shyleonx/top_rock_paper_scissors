@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP: Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1><span class='fire'>Fire</span> - <span class="water">Water</span> - <span class="grass">Grass</span></h1>
+        
+    <div id="container">
+        <div id="scores">
+            <p>PLAYER: <span class="player-score score">0</span></p>
+            <p>COMPUTER: <span class="computer-score score">0</span></p>
+        </div>
+        <div id="display">
+                <img src="images/pokeball.png" alt="" class="user-image">
+                <div class="vs">VS</div>
+                <img src="images/pokeball.png" alt="" class="com-image">   
+        </div>
+
+        <div id="long-line"></div>
+
+        <div id="result"></div>
+
+        <div id="user-selection">
+            <button id="fire" class="selection-button fire">🔥 Fire</button>
+            <button id="water" class="selection-button water">💧 Water</button>
+            <button id="grass" class="selection-button grass">🍂 Grass</button>
+        </div>
+        <button id="start-game">START BATTLE</button>
+    </div>
 
 
     <script src="script.js"></script>
